@@ -1,0 +1,13 @@
+html
+   head
+      title=name
+   body
+      h1=name
+      a(href = url) URL
+
+app.get('/dynamic_view', function(req, res){
+   res.render('dynamic', {
+      name: "Gomycode", 
+      url:"http://www.tutorialspoint.com"
+   });
+});
